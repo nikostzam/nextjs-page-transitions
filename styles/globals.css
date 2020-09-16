@@ -1,0 +1,159 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-y: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.left,
+.right {
+  flex-grow: 1;
+  width: 100%;
+  min-height: 100vh;
+}
+.left {
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 310px;
+  height: 400px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.right-wrapper {
+  padding: 72px;
+}
+
+.right-wrapper p {
+  margin: 10px 0;
+}
+.right-wrapper h1 {
+  margin: 30px 0;
+}
+.qty {
+  display: flex;
+}
+.minus,
+.add {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 16px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: bold;
+}
+.amount {
+  margin: 20px 0;
+}
+.add {
+  border: none;
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+}
+.price {
+  margin: 16px 0;
+  font-weight: bold;
+  font-size: 40px;
+}
+.buttons {
+  display: flex;
+}
+.buttons button {
+  border: none;
+  padding: 10px 23px;
+  margin-top: 30px;
+  background-color: #2d89fa;
+  color: white;
+  border-radius: 3px;
+}
+.buttons .secondary {
+  margin-left: 10px;
+  color: black;
+  background-color: #f3f3f3;
+}
+
+.product-image {
+  width: 550px;
+  height: 500px;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.panel {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1d1d1d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.link {
+  padding: 5px 20px;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+  color: white;
+  transition: 0.3s;
+  font-size: 13px;
+}
+
+.link:hover {
+  color: #1d1d1d;
+  background-color: inherit;
+}
